@@ -1,0 +1,90 @@
+html {
+scroll-behavior: smooth;
+}
+* {
+box-sizing: border-box;
+}
+a {
+text-decoration: none;
+display: inline-block;
+}
+ul,
+li {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.container {
+max-width: 1030px;
+margin: 0 auto;
+padding: 0px 15px;
+}
+
+.slider__inner{
+    position: relative;
+}
+.slider__block{
+    border: 2px solid black;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    
+}
+.slider__list{
+    display: flex;
+    width: 1024px;
+    transition: all ease 1s;
+    left: 0;
+    position: relative;
+}
+.slider__item img{
+    max-height: 400px;
+    width: 1024px;
+    object-fit: cover;
+}
+.slider__btn-list{
+    display: flex;
+}
+.slider__btn{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 5px 5px 0px 0px;
+}
+.slider__btn:hover{
+    background: rgb(231, 229, 229);
+    transition: all ease .3s;
+}
+.slider__btn img {
+    width: 10px;
+    height: 18px;
+}
+.btn-prev img{
+    margin-top: 8px;
+    margin-left: 11px;
+}
+.btn-next img{
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.slider__dot-list{
+    display: flex;
+    max-width: 60px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-100%);
+}
+.slider__dot{
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+
+
