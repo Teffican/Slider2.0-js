@@ -16,7 +16,7 @@ function slider() {
     btnPrev.addEventListener('click', () => {
         slide -= 1;
         if(slide < 0){
-            slide = 2; 
+            slide = slides.length - 1; 
             showSlide();
         } else { 
             showSlide();
