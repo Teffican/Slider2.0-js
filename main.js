@@ -11,8 +11,6 @@ function slider() {
         width = sliderList.offsetWidth;
     let slide = 0;
 
-    dots[slide].style.background = 'black';
-
     btnPrev.addEventListener('click', () => {
         slide -= 1;
         if(slide < 0){
@@ -43,9 +41,9 @@ function slider() {
     function showSlide(){
         sliderList.style.left = `-${width*slide}px`;
         dots.forEach(item => {
-            item.style.background = 'transparent';
+            item.classList.remove('active-dot');
         });
-        dots[slide].style.background = 'black';
+        dots[slide].classList.add('active-dot');
     }
 
 }

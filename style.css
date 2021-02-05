@@ -85,6 +85,9 @@ padding: 0px 15px;
     cursor: pointer;
     transition: all ease 1s;
 }
+.active-dot{
+    background-color: black;
+}
 
 
 
